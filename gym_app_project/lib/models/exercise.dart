@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class Exercise {
@@ -16,4 +18,5 @@ class Exercise {
     required this.listOfAllMusclesInvolved,
     required this.listOfHowMuch,
   });
+  // Double calculate
 }

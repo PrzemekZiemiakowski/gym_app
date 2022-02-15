@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PropertyofExe {
+class PropertyofExercise {
   final int day;
   final int week;
   final int sets;
@@ -14,7 +14,7 @@ class PropertyofExe {
   final int method;
   final String notes;
 
-  const PropertyofExe({
+  const PropertyofExercise({
     required this.day,
     required this.week,
     required this.sets,
@@ -28,4 +28,5 @@ class PropertyofExe {
     required this.method,
     required this.notes,
   });
+  
 }

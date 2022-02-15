@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym_app_project/widgets/auth_form.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({Key? key}) : super(key: key);
@@ -10,6 +11,9 @@ class AuthScreen extends StatefulWidget {
 class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Theme.of(context).primaryColor,
+      body: AuthForm(),
+    );
   }
 }

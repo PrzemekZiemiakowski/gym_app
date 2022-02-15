@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:gym_app_project/screens/auth_screen.dart';
 
 class AuthForm extends StatefulWidget {
@@ -43,6 +42,7 @@ class _AuthFormState extends State<AuthForm> {
                     onPressed: () {},
                   ),
                   FlatButton(
+                    textColor: Theme.of(context).primaryColor,
                     child: Text('Create new account'),
                     onPressed: () {},
                   )
