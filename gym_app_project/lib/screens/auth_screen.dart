@@ -1,5 +1,6 @@
 import 'dart:html';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gym_app_project/widgets/auth_form.dart';
@@ -19,6 +20,7 @@ class _AuthScreenState extends State<AuthScreen> {
     String password,
     String username,
     bool isLogin,
+    BuildContext ctx,
   ) async {
     // ignore: unused_local_variable
     UserCredential authResult;
@@ -29,6 +31,8 @@ class _AuthScreenState extends State<AuthScreen> {
       } else {
         authResult = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
+
+        //FirebaseFirestore.instance.collection('users').doc(authResult.user.uid).set
       }
     } on PlatformException catch (err) {
       String? message = 'An error occurred, pleasae check your cred';

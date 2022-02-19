@@ -8,6 +8,7 @@ class AuthForm extends StatefulWidget {
     String password,
     String username,
     bool isLogin,
+    BuildContext ctx,
   ) sumbitFn;
   @override
   _AuthFormState createState() => _AuthFormState();
@@ -28,10 +29,11 @@ class _AuthFormState extends State<AuthForm> {
       _formKey.currentState!.save();
       //sending values to auth request
       widget.sumbitFn(
-        _userEmail,
-        _userPassword,
-        _userName,
+        _userEmail.trim(),
+        _userPassword.trim(),
+        _userName.trim(),
         _isLogin,
+        context,
       );
     }
   }

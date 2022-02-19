@@ -1,6 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gym_app_project/screens/auth_screen.dart';
 import 'package:gym_app_project/screens/chat_screen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gym_app_project/widgets/LoginWidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,9 +26,29 @@ class MyApp extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           )),
-      home: AuthScreen(),
+      //AuthScreen()
+      home: MainPage(),
     );
   }
+}
+
+class MainPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) => Scaffold(
+        body: StreamBuilder<User?>(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              //zwracamy ekran startowy
+              //return MyHomePage();
+              return LoginWidget();
+            } else {
+              //ekran logowania
+              return LoginWidget();
+            }
+          },
+        ),
+      );
 }
 
 class MyHomePage extends StatefulWidget {
