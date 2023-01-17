@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2023-01-16T22:26:27.055Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0 (Edition std-1)" version="20.8.5" etag="ivdT4jyp_0A_q5dAyzXE" type="github"><diagram id="j0hsLUmv-gk9fjS6jTZJ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-17T00:31:56.958Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0 (Edition std-1)" version="20.8.5" etag="NCGnANugxZBquOzIiZPq" type="github">
+  <diagram id="rstKJG_Qi1JR4cE2nnDj" name="Strona-1">
+    <mxGraphModel dx="2033" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-3" value="Lista funkcjonalności&lt;br&gt;1. Zapisywanie planu treningowego&lt;br&gt;2.Odczyt planu treningowego per użytkownik&amp;nbsp;&lt;br&gt;3. Zobaczenie wszystkich swoich planów treningowych(udostępnionych nam jak i stworzonych przez nas i udostępnionym innym)&lt;br&gt;4. Dodawanie komentarzu do planu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="710" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-4" value="Flutter + dart" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="490" width="201.92" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-5" value="Zapis planu per użytkownik" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Uo53B8fH_A-Lm9nNThZm-4">
+          <mxGeometry y="26" width="201.92" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-6" value="Odczyt planu per użytkownik" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Uo53B8fH_A-Lm9nNThZm-4">
+          <mxGeometry y="60" width="201.92" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-7" value="Wyszukaj znajomych" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Uo53B8fH_A-Lm9nNThZm-4">
+          <mxGeometry y="100" width="201.92" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-8" value="Dodaj znajomego" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Uo53B8fH_A-Lm9nNThZm-4">
+          <mxGeometry y="150" width="201.92" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-10" value="Uzytkownik ma miec liste znajomych&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="90" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-14" value="Nabijacz do arango" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-17" value="Serwis Api tylko get" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uo53B8fH_A-Lm9nNThZm-6" target="Uo53B8fH_A-Lm9nNThZm-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uo53B8fH_A-Lm9nNThZm-7" target="Uo53B8fH_A-Lm9nNThZm-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uo53B8fH_A-Lm9nNThZm-21" target="Uo53B8fH_A-Lm9nNThZm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-21" value="Rabbitmq" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uo53B8fH_A-Lm9nNThZm-5" target="Uo53B8fH_A-Lm9nNThZm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uo53B8fH_A-Lm9nNThZm-8" target="Uo53B8fH_A-Lm9nNThZm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uo53B8fH_A-Lm9nNThZm-25" value="Plan ma mieć date wykonania konkretnych ćwiczeń/ pierwszego i ostatniego treningu&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="115" y="130" width="480" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
